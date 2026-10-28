@@ -8,30 +8,30 @@
 
 <div class="is-size-6 publication-authors">
   <p class="footnote">
-    <span class="footnote-symbol"><sup>*</sup></span>Co-first author</p>
+    <span class="footnote-symbol"><sup>*</sup></span>Co-first author &nbsp;&nbsp;&nbsp;
     <span class="footnote-symbol"><sup>‡</sup></span>Corresponding author
   </p>
 </div>
 
 <sup>1</sup>School of Computer Science, Nanjing University of Information Science and Technology
-<!-- <p align="center">
-  <a href='https://horizontel.github.io/DGS-Net/'>
+<p align="center">
+  <a href='https://github.com/HorizonTEL/NS-Net'>
     <img src='https://img.shields.io/badge/Project-Page-pink?style=flat&logo=Google%20chrome&logoColor=pink'>
   </a>
-  <a href='https://arxiv.org/abs/2511.13108'>
+  <a href='https://arxiv.org/abs/2508.01248'>
     <img src='https://img.shields.io/badge/Arxiv-2511.13108-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
   </a>
-  <a href='https://arxiv.org/pdf/2511.13108'>
+  <a href='https://arxiv.org/pdf/2508.01248'>
     <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
   </a>
-</p> -->
+</p>
 </div>
 <img width="10243" height="4080" alt="backbone" src="https://github.com/user-attachments/assets/514b8261-10aa-491a-9d87-eabe4b01e7ee" />
 
 
 
 ## 📰 News
-* [2026-05-01]🎉🎉🎉 NS-Net is accepted by IEEE Transactions on Multimedia
+* [2026-10-22]🎉🎉🎉 NS-Net is accepted by IEEE Transactions on Multimedia
 ## 🔥 Todo List
 - [x] **Inference code**
 - [x] **Pretrained models**
@@ -55,5 +55,26 @@ pip install -r requirements.txt
 | ARForensics       | D^3QE: Learning Discrete Distribution Discrepancy-aware Quantization Error for Autoregressive-Generated Image Detection (ICCV 2025)| [Huggingface](https://huggingface.co/HorizonTEL/AIGIBench/tree/main) |
 ### 3.Download Weights
 Place them under ```checkpoints/```:
+[Google Drive](https://drive.google.com/drive/folders/1hd46bcO7mWmgL6q7fCJWuFsgQr1ITFpO?usp=sharing)
 ### 4.Inference
 Of course, you need to change [DetectionTests] in test.py when testing.
+
+## ⏳ Training
+The training set uses ProGAN & SDv1.4 from AIGIBench (Is Artificial Intelligence Generated Image Detection a Solved Problem?, NeurIPS 2025) [Huggingface](https://huggingface.co/datasets/HorizonTEL/AIGIBench)/[Baidu Netdisk](https://pan.baidu.com/s/1XTwfXlfqkGxAwYLxXuZbfA?pwd=sm6v).
+```
+python train.py --name  5class-car-cat-chair-horse-sdv1.4 --dataroot /home/HDD/yjz/dataset/AIGIBench/train  --classes car,cat,chair,horse,sdv1.4 --niter 2
+```
+
+## 📚 Citation 
+```
+@article{yan2025ns,
+  title={Ns-net: Decoupling clip semantic information through null-space for generalizable ai-generated image detection},
+  author={Yan, Jiazhen and Wang, Fan and Jiang, Weiwei and Li, Ziqiang and Fu, Zhangjie},
+  journal={arXiv preprint arXiv:2508.01248},
+  year={2025}
+}
+```
+
+## 📬 Contact
+If you have any question about this project, please feel free to contact 247918horizon@gmail.com
+

@@ -67,11 +67,12 @@ python train.py --name  5class-car-cat-chair-horse-sdv1.4 --dataroot /home/HDD/y
 
 ## 📚 Citation 
 ```
-@article{yan2025ns,
+@article{yan2026ns,
   title={Ns-net: Decoupling clip semantic information through null-space for generalizable ai-generated image detection},
-  author={Yan, Jiazhen and Wang, Fan and Ziwen He and Li, Ziqiang and Fu, Zhangjie},
-  journal={arXiv preprint arXiv:2508.01248},
-  year={2025}
+  author={Yan, Jiazhen and Wang, Fan and He, Ziwen and Li, Ziqiang and Fu, Zhangjie},
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
